@@ -127,6 +127,9 @@ El catálogo vive en el repo como `cases/catalogo.json` (lo escribe Jose: son la
 | ID | title (`PA-0001`) | seed |
 | Informe médico | relation → Informes | seed |
 | Estado | select: Pendiente · En análisis · Preaprobada · Rechazada · Documentos faltantes · Error | seed / agente |
+| Escenario | rich_text (título del caso) | seed |
+| Veredicto esperado | select: Preaprobada · Rechazada · Documentos faltantes | seed — el jurado ve qué prueba cada caso y si el agente coincidió |
+| Paciente · Hospital | rich_text (denormalizados del informe, para la lista) | seed |
 | Póliza | relation → Pólizas | agente (resuelta por cédula) |
 | Procedimiento detectado | rich_text | agente |
 | CPT detectado | rich_text | agente |
@@ -343,7 +346,7 @@ Demo del "tiempo real" para el jurado: cambiar una Solicitud a `Pendiente` en No
 ## 9. Deploy en CapRover
 
 - `Dockerfile` multi-stage: `oven/bun` para instalar y `next build` (`output: 'standalone'`), runtime `node:22-alpine` ejecutando `server.js`. `captain-definition` → `{"schemaVersion":2,"dockerfilePath":"./Dockerfile"}`.
-- Variables en CapRover: `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `OPENROUTER_MODEL_FALLBACK`, `NOTION_TOKEN`, `NOTION_WEBHOOK_SECRET`, `NOTION_DB_POLIZAS`, `NOTION_DB_CATALOGO`, `NOTION_DB_INFORMES`, `NOTION_DB_SOLICITUDES` (data source IDs), `APP_URL`.
+- Variables en CapRover: `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `OPENROUTER_MODEL_FALLBACK`, `NOTION_TOKEN`, `NOTION_WEBHOOK_SECRET`, `NOTION_DS_POLIZAS`, `NOTION_DS_CATALOGO`, `NOTION_DS_INFORMES`, `NOTION_DS_SOLICITUDES` (data source IDs), `NOTION_ROOT_PAGE_ID`, `APP_URL`.
 - HTTPS con Let's Encrypt desde CapRover. Subdominio: **pendiente de Jose** (propuesta: `amparo.vorluno.dev`).
 - SSE: cabecera `X-Accel-Buffering: no`; verificar en el primer deploy que el stream llega token a token (si no, ajustar `proxy_buffering off` en la plantilla nginx de la app).
 - `.env.example` en el repo; **ningún secreto** en el repo público.
