@@ -4,6 +4,7 @@ import { AnalysisPanel } from '@/components/AnalysisPanel'
 import { EstadoBadge } from '@/components/EstadoBadge'
 import { ReportPane } from '@/components/ReportPane'
 import { getInforme, getSolicitud } from '@/lib/notion/repo'
+import { notionPageUrl } from '@/lib/notion/urls'
 
 export const dynamic = 'force-dynamic'
 
@@ -42,7 +43,7 @@ export default async function SolicitudPage({ params }: { params: Promise<{ id: 
           )}
         </div>
         <div className="min-w-0 order-1 lg:order-2">
-          <AnalysisPanel initial={s} />
+          <AnalysisPanel initial={s} notionUrl={notionPageUrl(s.pageId)} />
         </div>
       </div>
     </div>

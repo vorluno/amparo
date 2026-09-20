@@ -34,7 +34,7 @@ function storedVerdict(s: Solicitud): VerdictView | null {
 
 const LOST = 'Se perdió la conexión con el análisis. Vuelve a cargar la página para leer el resultado desde Notion.'
 
-export function AnalysisPanel({ initial }: { initial: Solicitud }) {
+export function AnalysisPanel({ initial, notionUrl }: { initial: Solicitud; notionUrl: string }) {
   const [solicitud, setSolicitud] = useState(initial)
   const [phase, setPhase] = useState<Phase>(initial.estado === 'En análisis' ? 'polling' : storedVerdict(initial) ? 'finished' : 'idle')
   const [steps, setSteps] = useState<Steps>(idleSteps())
@@ -98,7 +98,6 @@ export function AnalysisPanel({ initial }: { initial: Solicitud }) {
         } else if (e.event === 'done') {
           terminado = true
           setPhase('finished')
-          setSolicitud((s) => ({ ...s, url: e.data.notionUrl }))
           router.refresh() // re-renderiza el encabezado (estado) sin perder el estado de la consola
         }
       }
@@ -131,7 +130,7 @@ export function AnalysisPanel({ initial }: { initial: Solicitud }) {
         >
           {label}
         </button>
-        <a href={solicitud.url} target="_blank" rel="noreferrer" className="text-sm text-ink-2 underline-offset-4 hover:underline">
+        <a href={notionUrl} target="_blank" rel="noreferrer" className="text-sm text-ink-2 underline-offset-4 hover:underline">
           Ver en Notion ↗
         </a>
         {phase === 'polling' && <span className="text-xs text-ok">Disparado desde Notion · esta vista se actualiza sola.</span>}

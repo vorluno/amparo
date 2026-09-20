@@ -2,7 +2,7 @@
 
 Un agente que recibe el **informe médico del hospital** y la **póliza del asegurado** en Notion, y responde al instante con **Preaprobada**, **Rechazada** o **Documentos faltantes**, citando la regla y la cláusula que lo sostienen. Solución al Reto 1 del filtro del HackIAthon (Viamatica + ADEN).
 
-**Demo pública:** https://amparo.vorluno.dev · **Datos en Notion:** enlace "Datos en Notion" en la cabecera de la demo.
+**Demo pública:** https://amparo.vorluno.dev · **Datos en Notion (público):** https://sly-sovereign-37f.notion.site/3e19e19beec6819da242e6559857cc51
 
 > La IA lee y redacta; las reglas deciden. El modelo de lenguaje solo hace lo que el código no puede (leer prosa clínica y escribir la carta al hospital); un motor de reglas determinista, testeable sin red, decide cobertura y dinero.
 
