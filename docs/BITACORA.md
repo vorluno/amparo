@@ -21,12 +21,14 @@ Hora local Panamá (UTC-5).
 - **16:40** — T16 Dockerfile (322 MB) validado en local; app `amparo` creada en CapRover por API; variables y SSL; **deploy desde `main`**. SSE progresivo confirmado en producción. Registro DNS `amparo.vorluno.dev` creado en Cloudflare; dominio + SSL en CapRover. **https://amparo.vorluno.dev en vivo.**
 - **16:55** — Demo reseteada. Pendiente de Jose: crear la suscripción del webhook en la integración de Notion y pasar el `verification_token` a `NOTION_WEBHOOK_SECRET`.
 - **17:00** — T17: README, REGLAS, DECISIONES, esta bitácora.
+- **17:05** — Selfcheck: el gris terciario daba 3,2:1 → `#6f6f6f` (4,8:1 AA). Sin voseo en producto ni docs.
+- **17:10–17:30** — Notion desde el Chrome de Jose: el token `ntn_` era un *token de acceso personal* (sin webhooks) → creada la **conexión "Amparo"** con acceso a la página raíz; suscripción de webhook a `/api/webhooks/notion` (eventos `page.created`, `page.properties_updated`, API 2026-03-11); `verification_token` recibido en producción y guardado en CapRover. Página raíz **publicada** en https://sly-sovereign-37f.notion.site/3e19e19beec6819da242e6559857cc51 (subpáginas y bases accesibles sin sesión). Enlaces de la consola apuntan al sitio público (`NOTION_PUBLIC_BASE`). Redeploy.
+- Pendiente inmediato: Jose pega el token en "Verificar suscripción" (regla: el asistente no ingresa tokens en formularios) y se prueba el tiempo real con PA-0003.
 
 ## Pendiente
 
 - Casos PA-0002/0004/0005/0006 (Cristian) y PA-0007…0012 + Condiciones Generales (Levi) por PR; luego `bun run notion:seed` y sus `tests/cases/*.extraction.json`.
-- Suscripción del webhook en Notion (Jose) y prueba del "tiempo real" en producción.
+- Verificar la suscripción del webhook (pegar el token en Notion) y probar el tiempo real con PA-0003.
 - QA de los 12 casos en la demo pública (21/09 mañana) → `docs/CASOS.md`.
-- Publicar la página raíz de Notion (Share → Publish) para el enlace "Datos en Notion".
 - Subir el límite de OpenRouter antes de enviar; rotar clave y token después del 21.
 - Correo a `hackiathon@viamatica.com` (borrador de Cristian, envía Jose).
