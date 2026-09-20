@@ -17,7 +17,7 @@ export function buildVerdictBlocks(
   extraction: ExtractedReport,
   meta: { version: string; modelId: string; analizadoEl: string },
 ): BlockObjectRequest[] {
-  const out: BlockObjectRequest[] = [divider(), paragraph(`— amparo ${meta.version} · ${meta.modelId} · ${meta.analizadoEl} —`, true), heading('Carta al hospital')]
+  const out: BlockObjectRequest[] = [divider(), paragraph(`— ${meta.version} · ${meta.modelId} · ${meta.analizadoEl} —`, true), heading('Carta al hospital')]
   for (const p of carta.split(/\n\s*\n/)) if (p.trim()) out.push(paragraph(p.trim()))
   out.push(heading('Traza del adjudicador'))
   for (const r of a.reglas) {
