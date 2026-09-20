@@ -110,5 +110,4 @@ Para el webhook: despliega con HTTPS (`Dockerfile` + `captain-definition` inclui
 ## Equipo
 
 - **José L. González** (Vorluno) — arquitectura, motor de reglas, pipeline, consola, despliegue.
-- **Cristian** — casos clínicos PA-0002 a PA-0006, matriz de QA, correo de envío.
-- **Levi** — Condiciones Generales, casos PA-0007 a PA-0012, QA del webhook, capturas y GIF.
+- **Cristian** y **Levi** — revisión de los casos, QA sobre la demo pública y presentación.

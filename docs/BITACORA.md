@@ -25,9 +25,11 @@ Hora local Panamá (UTC-5).
 - **17:10–17:30** — Notion desde el Chrome de Jose: el token `ntn_` era un *token de acceso personal* (sin webhooks) → creada la **conexión "Amparo"** con acceso a la página raíz; suscripción de webhook a `/api/webhooks/notion` (eventos `page.created`, `page.properties_updated`, API 2026-03-11); `verification_token` recibido en producción y guardado en CapRover. Página raíz **publicada** en https://sly-sovereign-37f.notion.site/3e19e19beec6819da242e6559857cc51 (subpáginas y bases accesibles sin sesión). Enlaces de la consola apuntan al sitio público (`NOTION_PUBLIC_BASE`). Redeploy.
 - **17:40** — Jose verificó la suscripción. **Prueba del tiempo real en producción:** edición humana de *Escenario* en PA-0003 (17:42:20) → webhook → `En análisis` (17:43:05) → `Documentos faltantes` (17:43:11). Un solo análisis (las escrituras del agente no re-disparan). Demo reseteada.
 
+- **17:55–18:20** — Decisión de Jose: el equipo cierra todo sin esperar PRs. Escritos los casos PA-0002 a PA-0012 con sus extracciones esperadas (12/12 golden verdes) y verificados con el modelo real (10/10, incluida la pareja rinoplastia/septoplastia y el ambiguo con certeza 0,1). Condiciones Generales redactadas. Seed: 29 filas nuevas. El webhook analizó solo los 10 casos nuevos al crearse (el token personal firma como persona): **11/12 veredictos correctos en producción** con fechas y tope exactos; PA-0001 queda `Pendiente` a propósito para la primera demostración en vivo.
+- **18:20** — Pasada minimalista de la consola (principios P01/P03/P05/P11): lista en filas con escenario + paciente·hospital, sin tabla ni columna de acción, ancho 56rem; detalle sin duplicar el "esperado"; títulos a dos líneas en móvil. Capturas 1280/400 sin desborde. Redeploy.
+
 ## Pendiente
 
-- Casos PA-0002/0004/0005/0006 (Cristian) y PA-0007…0012 + Condiciones Generales (Levi) por PR; luego `bun run notion:seed` y sus `tests/cases/*.extraction.json`.
-- QA de los 12 casos en la demo pública (21/09 mañana) → `docs/CASOS.md`.
+- Repaso final del 21/09: abrir cada caso en la demo, GIF/capturas, revisar `docs/CASOS.md`.
 - Subir el límite de OpenRouter antes de enviar; rotar clave y token después del 21.
 - Correo a `hackiathon@viamatica.com` (borrador de Cristian, envía Jose).
