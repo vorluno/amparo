@@ -10,6 +10,8 @@
 
 **Spec:** `docs/DISENO.md` (leerlo entero antes de ejecutar cualquier tarea).
 
+**Estado (20/09/2026 17:00):** tareas 1–16 completadas y desplegadas en https://amparo.vorluno.dev; tarea 17 en curso (docs listas; QA de los 12 casos y entrega el 21/09). Detalle en `docs/BITACORA.md`.
+
 ## Global Constraints
 
 - Español neutro en TODO texto visible o generado (UI, carta, docs, prompts): sin voseo (`vos`, `tenés`, `elegí`, `acá`…). Usar `tú`/impersonal.
