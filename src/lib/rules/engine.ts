@@ -56,9 +56,9 @@ function r2Extraccion(ctx: Ctx): RuleResult {
   const { extraction, procedure, config } = ctx
   const titulo = TITULOS.R2
   const ok = extraction.confianza >= config.umbralConfianza && procedure !== null
-  const conf = `confianza ${extraction.confianza.toFixed(2)} (umbral ${config.umbralConfianza})`
+  const conf = `certeza ${Math.round(extraction.confianza * 100)} % (mínimo ${Math.round(config.umbralConfianza * 100)} %)`
   if (!ok) {
-    const causa = procedure === null ? 'ningún procedimiento del catálogo corresponde al informe' : 'la confianza de la extracción está bajo el umbral'
+    const causa = procedure === null ? 'ningún procedimiento del catálogo corresponde al informe' : 'la certeza de la lectura está por debajo del mínimo'
     const amb = extraction.ambiguedades.length ? ` Ambigüedades: ${extraction.ambiguedades.join('; ')}.` : ''
     return push(ctx, { id: 'R2', clausula: null, titulo, resultado: 'no_cumple', evidencia: `"${extraction.procedimientoTexto}": ${causa}; ${conf}.${amb}` })
   }

@@ -247,7 +247,11 @@ export function prosaToBlocks(prosa: string): BlockObjectRequest[] {
 /** Bloques de párrafo → texto plano con párrafos separados por línea en blanco (lo que lee el extractor). */
 export function blocksToProsa(blocks: Array<BlockObjectResponse | PartialBlockObjectResponse>): string {
   return blocks
-    .map((b) => ('type' in b && b.type === 'paragraph' ? plain(b.paragraph.rich_text) : ''))
+    .map((b) => {
+      if (!('type' in b) || b.type !== 'paragraph') return ''
+      // Conserva las negritas como **…** para que la consola las pinte igual que el archivo original.
+      return b.paragraph.rich_text.map((t) => (t.annotations.bold && t.plain_text.trim() ? `**${t.plain_text}**` : t.plain_text)).join('')
+    })
     .filter(Boolean)
     .join('\n\n')
 }

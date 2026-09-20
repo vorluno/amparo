@@ -30,7 +30,7 @@ export function buildVerdictBlocks(
   out.push(
     heading('Extracción clínica'),
     paragraph(
-      `Procedimiento en el informe: "${extraction.procedimientoTexto}" · Diagnóstico: ${extraction.diagnostico} · Especialidad: ${extraction.especialidad} · Atención inferida: ${extraction.tipoAtencionInferido} · Confianza: ${extraction.confianza.toFixed(2)}`,
+      `Procedimiento en el informe: "${extraction.procedimientoTexto}" · Diagnóstico: ${extraction.diagnostico} · Especialidad: ${extraction.especialidad} · Atención inferida: ${extraction.tipoAtencionInferido} · Certeza: ${Math.round(extraction.confianza * 100)} %`,
     ),
     paragraph(`Justificación: ${extraction.justificacionClinica}`),
   )

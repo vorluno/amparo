@@ -17,6 +17,6 @@ describe('prosa ⇄ bloques', () => {
       type: 'paragraph',
       paragraph: { rich_text: b.paragraph.rich_text.map((t) => ({ ...t, plain_text: t.text.content })) },
     }))
-    expect(blocksToProsa(responses as never)).toBe('Paciente: Juan Pérez, 40 años.\n\nPlan: apendicectomía.')
+    expect(blocksToProsa(responses as never)).toBe(prosa) // ida y vuelta conserva las negritas
   })
 })

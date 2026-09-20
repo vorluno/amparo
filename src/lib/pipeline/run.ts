@@ -47,8 +47,8 @@ export async function runPreauth(s: Solicitud, emit: Emit, deps: PipelineDeps = 
     done(
       'extract',
       procedure
-        ? `${procedure.procedimiento} (CPT ${procedure.cpt}) · confianza ${extraction.confianza.toFixed(2)}`
-        : `Sin procedimiento identificable · confianza ${extraction.confianza.toFixed(2)}`,
+        ? `${procedure.procedimiento} (CPT ${procedure.cpt}) · certeza ${Math.round(extraction.confianza * 100)} %`
+        : `Sin procedimiento identificable · certeza ${Math.round(extraction.confianza * 100)} %`,
       { extraction, modelId, attempts, procedure },
     )
 

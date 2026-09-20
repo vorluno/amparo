@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-ink: #141414;
+  --color-ink-2: #4b4b4b;
+  --color-ink-3: #8c8c8c;
+  --color-paper: #fafaf9;
+  --color-surface: #ffffff;
+  --color-line: #e6e6e3;
+  /* Único verde vivo: el paso en curso o el veredicto Preaprobada. */
+  --color-ok: #15803d;
+  --color-ok-bg: #f0fdf4;
+  /* Semánticos apagados: rechazo y documentos faltantes. */
+  --color-no: #9f1239;
+  --color-no-bg: #fff1f2;
+  --color-warn: #a16207;
+  --color-warn-bg: #fefce8;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
 }
