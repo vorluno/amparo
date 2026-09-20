@@ -125,7 +125,7 @@ NOTION_DS_INFORMES=
 NOTION_DS_SOLICITUDES=
 # Token de verificación que Notion envía al crear la suscripción del webhook
 NOTION_WEBHOOK_SECRET=
-APP_URL=http://localhost:3000
+APP_URL=http://localhost:3010
 ```
 
 - [ ] **Step 7: Health route** `src/app/api/health/route.ts`
@@ -2295,7 +2295,7 @@ export async function POST(_req: Request, ctx: { params: Promise<{ id: string }>
 
 ```bash
 bun dev &
-curl -N -X POST http://localhost:3000/api/solicitudes/PA-0001/analizar
+curl -N -X POST http://localhost:3010/api/solicitudes/PA-0001/analizar
 ```
 Expected: eventos `step` running/done para las 5 etapas, `token`s de la carta, `verdict` con `estado: "Preaprobada"`, `done`. En Notion, PA-0001 pasa a `Preaprobada` con la carta y la traza en el cuerpo. Repetir el `curl` de inmediato dos veces en paralelo: uno de los dos debe responder `409`.
 
@@ -2490,7 +2490,7 @@ export default async function Home() {
 ```bash
 bun dev
 ```
-Abrir `http://localhost:3000`: tabla con PA-0001 y PA-0003 (estado real de Notion). Capturas a 1280 y 400 (con `example-skills:webapp-testing` o Chrome): sin scroll horizontal en 400 salvo el de la tabla contenida.
+Abrir `http://localhost:3010`: tabla con PA-0001 y PA-0003 (estado real de Notion). Capturas a 1280 y 400 (con `example-skills:webapp-testing` o Chrome): sin scroll horizontal en 400 salvo el de la tabla contenida.
 
 ```bash
 git add src/app src/components src/lib/notion/urls.ts
