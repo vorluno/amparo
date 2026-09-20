@@ -1,0 +1,18 @@
+{
+  "catalogoId": "colecistectomia-laparoscopica",
+  "procedimientoTexto": "colecistectomía laparoscópica electiva",
+  "diagnostico": "colelitiasis sintomática",
+  "cie10Sugerido": "K80.20",
+  "especialidad": "Cirugía general",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "El paciente presenta un cuadro de tres meses de evolución con episodios recurrentes de dolor en hipocondrio derecho posprandial, asociado a náusea. La ecografía describe vesícula con múltiples litos de hasta 14 mm.",
+  "documentosMencionados": [
+    "Informe médico",
+    "Exámenes de laboratorio",
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}

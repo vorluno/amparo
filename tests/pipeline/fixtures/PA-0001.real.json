@@ -1,0 +1,17 @@
+{
+  "catalogoId": "apendicectomia-laparoscopica",
+  "procedimientoTexto": "apendicectomía laparoscópica",
+  "diagnostico": "apendicitis aguda no complicada",
+  "cie10Sugerido": "K35.80",
+  "especialidad": "Cirugía general",
+  "tipoAtencionInferido": "Emergencia",
+  "justificacionClinica": "La paciente presenta dolor abdominal en fosa ilíaca derecha con signos de Blumberg y Rovsing positivos, leucocitosis y apéndice cecal de 11 mm de diámetro no compresible en ecografía. Se indica apendicectomía laparoscópica de urgencia en las próximas 6 horas.",
+  "documentosMencionados": [
+    "Exámenes de laboratorio",
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}
