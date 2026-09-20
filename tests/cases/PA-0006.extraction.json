@@ -1,0 +1,16 @@
+{
+  "catalogoId": "septoplastia-funcional",
+  "procedimientoTexto": "septoplastia funcional con reducción de cornetes inferiores",
+  "diagnostico": "Desviación del tabique nasal con obstrucción nasal crónica",
+  "cie10Sugerido": "J34.2",
+  "especialidad": "Otorrinolaringología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Obstrucción nasal crónica con desviación septal severa y espolón en la tomografía; indicación estrictamente funcional.",
+  "documentosMencionados": [
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.96,
+  "ambiguedades": []
+}

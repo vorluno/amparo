@@ -1,0 +1,18 @@
+{
+  "catalogoId": "bypass-coronario",
+  "procedimientoTexto": "cirugía de revascularización miocárdica (bypass coronario) con tres puentes",
+  "diagnostico": "Síndrome coronario agudo sin elevación del ST con enfermedad coronaria de tres vasos",
+  "cie10Sugerido": "I25.10",
+  "especialidad": "Cardiología",
+  "tipoAtencionInferido": "Urgencia",
+  "justificacionClinica": "Cateterismo con enfermedad de tres vasos y SYNTAX 29; Heart Team indica revascularización quirúrgica no diferible más allá de la hospitalización.",
+  "documentosMencionados": [
+    "Exámenes de laboratorio",
+    "Imagenología",
+    "Segunda opinión",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.97,
+  "ambiguedades": []
+}

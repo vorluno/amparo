@@ -1,0 +1,18 @@
+{
+  "catalogoId": null,
+  "procedimientoTexto": "valoración por Neurocirugía para definir la conducta quirúrgica más adecuada",
+  "diagnostico": "lumbociatalgia derecha por protrusión discal L4-L5",
+  "cie10Sugerido": "M51.1",
+  "especialidad": "Medicina Física y Rehabilitación",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "El paciente presenta lumbalgia de ocho meses de evolución con irradiación, y el tratamiento conservador ha sido insuficiente. La resonancia magnética de columna lumbar muestra protrusión discal L4-L5 con contacto radicular derecho.",
+  "documentosMencionados": [
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.1,
+  "ambiguedades": [
+    "El informe no propone un procedimiento quirúrgico específico, solo una valoración para definirlo."
+  ]
+}

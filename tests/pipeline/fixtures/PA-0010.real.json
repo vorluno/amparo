@@ -1,0 +1,17 @@
+{
+  "catalogoId": "amigdalectomia",
+  "procedimientoTexto": "amigdalectomía bilateral",
+  "diagnostico": "amigdalitis crónica recurrente",
+  "cie10Sugerido": "J35.01",
+  "especialidad": "Otorrinolaringología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "El paciente presenta episodios de amigdalitis aguda a repetición (seis en los últimos doce meses), con exudado purulento y cultivo positivo para estreptococo beta hemolítico del grupo A. Refiere odinofagia recurrente, halitosis y dos ausencias laborales prolongadas por esta causa. El examen físico revela amígdalas palatinas hipertróficas grado III.",
+  "documentosMencionados": [
+    "Historia clínica",
+    "Exámenes de laboratorio",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}

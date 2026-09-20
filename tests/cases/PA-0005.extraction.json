@@ -1,0 +1,15 @@
+{
+  "catalogoId": "rinoplastia-estetica",
+  "procedimientoTexto": "rinoplastia estética abierta con reducción de giba y refinamiento de punta",
+  "diagnostico": "Deformidad nasal estética sin compromiso funcional",
+  "cie10Sugerido": "Z41.1",
+  "especialidad": "Cirugía Plástica",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Inconformidad con dorso y punta nasal; rinoscopia normal, sin obstrucción ni trauma previo.",
+  "documentosMencionados": [
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": true,
+  "confianza": 0.97,
+  "ambiguedades": []
+}

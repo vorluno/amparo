@@ -1,0 +1,17 @@
+{
+  "catalogoId": "cesarea",
+  "procedimientoTexto": "cesárea segmentaria programada",
+  "diagnostico": "Embarazo de 37 semanas con presentación podálica persistente",
+  "cie10Sugerido": "O82",
+  "especialidad": "Ginecología y Obstetricia",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Presentación podálica persistente confirmada por ecografía a las 37 semanas; la paciente rechaza la versión cefálica externa.",
+  "documentosMencionados": [
+    "Imagenología",
+    "Exámenes de laboratorio",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.97,
+  "ambiguedades": []
+}

@@ -1,0 +1,16 @@
+{
+  "catalogoId": "artroscopia-rodilla",
+  "procedimientoTexto": "artroscopia de rodilla derecha con meniscectomía parcial",
+  "diagnostico": "Rotura de menisco medial de rodilla derecha",
+  "cie10Sugerido": "M23.2",
+  "especialidad": "Ortopedia y Traumatología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Bloqueos articulares, McMurray positivo y resonancia con rotura en asa de balde del menisco medial.",
+  "documentosMencionados": [
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.96,
+  "ambiguedades": []
+}

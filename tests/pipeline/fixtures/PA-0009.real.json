@@ -1,0 +1,17 @@
+{
+  "catalogoId": "herniorrafia-inguinal",
+  "procedimientoTexto": "herniorrafia inguinal derecha con colocación de malla (técnica de Lichtenstein)",
+  "diagnostico": "hernia inguinal derecha reductible",
+  "cie10Sugerido": "K40.90",
+  "especialidad": "Cirugía general",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "El paciente presenta una tumoración en la región inguinal derecha de ocho meses de evolución, que protruye con la maniobra de Valsalva y es reductible. Refiere dolor sordo al final de la jornada y un episodio de dificultad para reducirla.",
+  "documentosMencionados": [
+    "Exámenes de laboratorio",
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}

@@ -1,0 +1,16 @@
+{
+  "catalogoId": "amigdalectomia",
+  "procedimientoTexto": "amigdalectomía bilateral",
+  "diagnostico": "Amigdalitis crónica recurrente con hipertrofia amigdalina",
+  "cie10Sugerido": "J35.01",
+  "especialidad": "Otorrinolaringología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Cinco episodios en el último año, hipertrofia amigdalina grado III-IV con ronquido y somnolencia diurna.",
+  "documentosMencionados": [
+    "Exámenes de laboratorio",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.96,
+  "ambiguedades": []
+}

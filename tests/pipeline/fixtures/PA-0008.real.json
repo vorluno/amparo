@@ -1,0 +1,18 @@
+{
+  "catalogoId": "reemplazo-total-cadera",
+  "procedimientoTexto": "artroplastia total de cadera izquierda (reemplazo total de cadera)",
+  "diagnostico": "coxartrosis primaria severa de cadera izquierda",
+  "cie10Sugerido": "M16.1",
+  "especialidad": "Ortopedia y Traumatología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "La paciente presenta dolor en cadera izquierda de tres años de evolución, progresivo, que limita la marcha y no ha mejorado con tratamiento conservador. Las radiografías muestran pinzamiento completo del espacio articular y clasificación Tönnis grado 3.",
+  "documentosMencionados": [
+    "Informe médico",
+    "Imagenología",
+    "Consentimiento informado",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}

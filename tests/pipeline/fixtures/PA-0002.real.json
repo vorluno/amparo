@@ -1,0 +1,16 @@
+{
+  "catalogoId": "artroscopia-rodilla",
+  "procedimientoTexto": "artroscopia de rodilla derecha con meniscectomía parcial",
+  "diagnostico": "rotura de menisco medial de rodilla derecha",
+  "cie10Sugerido": "M23.2",
+  "especialidad": "Ortopedia y Traumatología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "La paciente presenta dolor en rodilla derecha con bloqueos articulares y sensación de inestabilidad. La resonancia magnética confirma una rotura en asa de balde del cuerno posterior del menisco medial. La fisioterapia y antiinflamatorios no han logrado mejoría funcional.",
+  "documentosMencionados": [
+    "Imagenología",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}

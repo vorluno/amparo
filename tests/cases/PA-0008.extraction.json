@@ -1,0 +1,17 @@
+{
+  "catalogoId": "reemplazo-total-cadera",
+  "procedimientoTexto": "artroplastia total de cadera izquierda (reemplazo total de cadera)",
+  "diagnostico": "Coxartrosis primaria severa de cadera izquierda",
+  "cie10Sugerido": "M16.1",
+  "especialidad": "Ortopedia y Traumatología",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Dolor de reposo con limitación funcional severa, Harris 41 y radiografía Tönnis grado 3 tras fracaso del tratamiento conservador.",
+  "documentosMencionados": [
+    "Imagenología",
+    "Consentimiento informado",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 0.97,
+  "ambiguedades": []
+}

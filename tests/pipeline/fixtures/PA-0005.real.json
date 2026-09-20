@@ -1,0 +1,16 @@
+{
+  "catalogoId": "rinoplastia-estetica",
+  "procedimientoTexto": "rinoplastia estética abierta con reducción de giba y refinamiento de punta",
+  "diagnostico": "deformidad nasal estética, dorso y punta, sin compromiso funcional",
+  "cie10Sugerido": "Z41.1",
+  "especialidad": "Cirugía Plástica y Estética",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "La paciente solicita valoración para corregir la forma de su nariz, refiriendo inconformidad con la prominencia del dorso nasal y con la punta. El examen físico revela giba osteocartilaginosa moderada y punta bulbosa, sin signos de obstrucción ni de insuficiencia valvular.",
+  "documentosMencionados": [
+    "Informe médico",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": true,
+  "confianza": 1,
+  "ambiguedades": []
+}

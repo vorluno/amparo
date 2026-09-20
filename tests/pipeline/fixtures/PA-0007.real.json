@@ -1,0 +1,18 @@
+{
+  "catalogoId": "bypass-coronario",
+  "procedimientoTexto": "cirugía de revascularización miocárdica (bypass coronario) con tres puentes",
+  "diagnostico": "síndrome coronario agudo sin elevación del ST en paciente con enfermedad coronaria de tres vasos",
+  "cie10Sugerido": "I25.10",
+  "especialidad": "Cardiología",
+  "tipoAtencionInferido": "Urgencia",
+  "justificacionClinica": "El paciente presenta síndrome coronario agudo sin elevación del ST con enfermedad de tres vasos y SYNTAX score 29. El cateterismo cardíaco muestra reestenosis intrastent de la descendente anterior del 80%, lesión del 75% en circunfleja proximal y del 70% en coronaria derecha. Se indica cirugía de revascularización miocárdica con tres puentes con carácter de urgencia no diferible.",
+  "documentosMencionados": [
+    "Exámenes de laboratorio",
+    "Imagenología",
+    "Segunda opinión",
+    "Presupuesto hospitalario"
+  ],
+  "esEstetico": false,
+  "confianza": 1,
+  "ambiguedades": []
+}

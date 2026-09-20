@@ -1,0 +1,17 @@
+{
+  "catalogoId": null,
+  "procedimientoTexto": "valoración por Neurocirugía para definir la conducta quirúrgica",
+  "diagnostico": "Lumbociatalgia derecha por protrusión discal L4-L5",
+  "cie10Sugerido": "M51.1",
+  "especialidad": "Medicina Física y Rehabilitación",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Protrusión discal L4-L5 con contacto radicular y Lasègue positivo tras tratamiento conservador insuficiente; no se propone un procedimiento concreto.",
+  "documentosMencionados": [
+    "Imagenología"
+  ],
+  "esEstetico": false,
+  "confianza": 0.3,
+  "ambiguedades": [
+    "El informe solicita una valoración para definir la conducta quirúrgica; no nombra ningún procedimiento."
+  ]
+}
