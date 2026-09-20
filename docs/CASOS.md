@@ -17,4 +17,4 @@ Cada caso vive en `cases/PA-00xx.md`. Las columnas "Obtenido / Quién / Observac
 | PA-0011 | Amigdalectomía en hospital fuera de la red | Rechazada | R3 fuera de red | 3 | | | |
 | PA-0012 | Informe ambiguo sin procedimiento concreto | Documentos faltantes (informe ampliado) | R2 certeza baja / sin ID de catálogo | 7 | | | |
 
-**Prueba del tiempo real (webhook):** con PA-0003 en `Pendiente`, editar y restaurar *Escenario* en Notion; debe pasar a `En análisis` y luego a `Documentos faltantes` sin tocar la consola. Obtenido: ____ · Quién / hora: ____
+**Prueba del tiempo real (webhook):** con PA-0003 en `Pendiente`, editar y restaurar *Escenario* en Notion; debe pasar a `En análisis` y luego a `Documentos faltantes` sin tocar la consola. Obtenido: **funciona** (Pendiente → En análisis → Documentos faltantes en ~50 s) · Jose + Claude, 20/09 17:43 — se repite en el QA del 21
