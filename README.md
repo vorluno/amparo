@@ -14,7 +14,7 @@ Un agente que recibe el **informe médico del hospital** y la **póliza del aseg
 2. Pulsa **Analizar**. Verás las cinco etapas encenderse en orden: extractor clínico, auditor de póliza, adjudicador, carta al hospital y registro en Notion. Cada etapa se despliega para mostrar su evidencia; el adjudicador enseña las ocho reglas con "cumple / no cumple" y la cláusula.
 3. Pulsa **Ver en Notion**: la solicitud quedó con el veredicto en sus propiedades y, en el cuerpo de la página, la carta y la traza completa.
 
-**El "tiempo real" desde Notion:** cambia cualquier propiedad de una solicitud que esté en `Pendiente` (por ejemplo, edita y restaura *Escenario*). Sin tocar la consola, en menos de un minuto pasa a `En análisis` y luego al veredicto: la integración de Notion dispara un webhook y el agente corre solo. La consola, si la tienes abierta, se actualiza sola.
+**El "tiempo real" desde Notion:** en la base *Solicitudes de pre-autorización* (enlace "Datos en Notion"), cambia el **Estado** de cualquier solicitud a `Pendiente` (o edita cualquier propiedad de una que ya esté en `Pendiente`). Sin tocar la consola, en menos de un minuto pasa a `En análisis` y luego al veredicto: la integración de Notion dispara un webhook y el agente corre solo. La consola, si la tienes abierta, se actualiza sola.
 
 ---
 

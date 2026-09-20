@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto w-full max-w-6xl px-4 py-8 flex-1">{children}</main>
         <footer className="border-t border-line">
           <div className="mx-auto max-w-6xl px-4 py-4 text-xs text-ink-3">
-            HackIAthon Viamatica · Reto 1 · La IA lee y redacta; las reglas deciden.
+            La IA lee y redacta; las reglas deciden. · HackIAthon Viamatica, Reto 1
           </div>
         </footer>
       </body>

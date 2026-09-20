@@ -32,7 +32,9 @@ export default async function SolicitudPage({ params }: { params: Promise<{ id: 
       </div>
       <div>
         <h1 className="text-2xl font-semibold tracking-tight">{s.escenario || s.id}</h1>
-        {s.esperado && <p className="mt-1 text-sm text-ink-3">Caso de demostración · veredicto esperado: {s.esperado}</p>}
+        {s.esperado && !['Preaprobada', 'Rechazada', 'Documentos faltantes'].includes(s.estado) && (
+          <p className="mt-1 text-sm text-ink-3">Veredicto esperado: {s.esperado}</p>
+        )}
       </div>
       <div className="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
         <div className="min-w-0 order-2 lg:order-1">

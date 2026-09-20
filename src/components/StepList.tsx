@@ -131,14 +131,14 @@ export function StepList({ steps, letter }: { steps: Steps; letter: string }) {
               disabled={!canOpen}
               aria-expanded={canOpen ? isOpen : undefined}
               onClick={() => setOpen((o) => ({ ...o, [id]: !o[id] }))}
-              className="flex w-full items-start gap-3 py-3 text-left disabled:cursor-default"
+              className="group flex w-full items-start gap-3 py-3 text-left disabled:cursor-default"
             >
               <span className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${DOT[s.status]}`} aria-hidden />
               <span className="min-w-0 flex-1">
                 <span className="flex items-center gap-2 text-sm">
                   <span className="font-mono text-xs text-ink-3">{i + 1}</span>
                   <span className={`font-medium ${s.status === 'idle' ? 'text-ink-3' : s.status === 'running' ? 'text-ok' : 'text-ink'}`}>{STEP_TITLES[id]}</span>
-                  {canOpen && <span className="ml-auto text-xs text-ink-3">{isOpen ? 'ocultar' : 'ver evidencia'}</span>}
+                  {canOpen && <span className="ml-auto text-xs text-ink-3 opacity-70 group-hover:opacity-100">{isOpen ? 'ocultar' : 'evidencia'}</span>}
                 </span>
                 {s.detail && <span className={`mt-0.5 block text-xs ${s.status === 'error' ? 'text-no' : s.status === 'running' ? 'text-ok' : 'text-ink-2'}`}>{s.detail}</span>}
               </span>

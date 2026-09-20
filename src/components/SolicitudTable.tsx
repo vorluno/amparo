@@ -4,12 +4,11 @@ import { EstadoBadge } from './EstadoBadge'
 
 /**
  * Sitio: pantalla principal, debajo del título.
- * 1. Manda: la lista misma; cada fila es una solicitud y su escenario.
- * 2. Choca con: nada arriba (título) ni abajo (pie). A 400 px la tabla se desplaza dentro de su
- *    contenedor (overflow-x-auto), la página no.
- * 3. Se mueve: nada.
+ * 1. Manda: cada fila es una solicitud; el escenario es su protagonista, paciente y hospital lo acompañan debajo (P03).
+ * 2. Choca con: nada; filas con hairline, sin tabla ni columna de acción (P11: la fila entera es el enlace).
+ * 3. Se mueve: a 400 px el estado baja a una segunda línea; nunca hay desborde horizontal.
  * 4. Vacío: mensaje con el comando de seed. Error: lo maneja la página. Corriendo: "En análisis" en verde.
- * 5. Quien ya miraba: la fila conserva su posición (orden por ID); solo cambia el estado y el verbo.
+ * 5. Quien ya miraba: orden fijo por ID; solo cambia el estado.
  */
 export function SolicitudTable({ rows }: { rows: Solicitud[] }) {
   if (!rows.length) {
@@ -20,44 +19,29 @@ export function SolicitudTable({ rows }: { rows: Solicitud[] }) {
     )
   }
   return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm">
-        <thead className="text-left text-xs uppercase tracking-wide text-ink-3">
-          <tr className="border-b border-line">
-            <th className="py-3 pr-4 font-medium">ID</th>
-            <th className="py-3 pr-4 font-medium">Escenario</th>
-            <th className="py-3 pr-4 font-medium">Paciente</th>
-            <th className="py-3 pr-4 font-medium">Hospital</th>
-            <th className="py-3 pr-4 font-medium">Estado</th>
-            <th className="py-3 text-right font-medium">Acción</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((s) => {
-            const accion = s.estado === 'Pendiente' || s.estado === 'Error' ? 'Analizar' : s.estado === 'En análisis' ? 'Ver progreso' : 'Ver resultado'
-            return (
-              <tr key={s.id} className="border-b border-line hover:bg-surface">
-                <td className="py-3 pr-4 font-mono text-xs text-ink-2 whitespace-nowrap">{s.id}</td>
-                <td className="py-3 pr-4 min-w-64">
-                  <Link href={`/solicitudes/${s.id}`} className="font-medium hover:underline underline-offset-4">
-                    {s.escenario || s.id}
-                  </Link>
-                </td>
-                <td className="py-3 pr-4 whitespace-nowrap">{s.paciente || '—'}</td>
-                <td className="py-3 pr-4 text-ink-2 whitespace-nowrap">{s.hospital || '—'}</td>
-                <td className="py-3 pr-4">
-                  <EstadoBadge estado={s.estado} />
-                </td>
-                <td className="py-3 text-right whitespace-nowrap">
-                  <Link href={`/solicitudes/${s.id}`} className="font-medium underline-offset-4 hover:underline">
-                    {accion} →
-                  </Link>
-                </td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
-    </div>
+    <ul className="border-t border-line">
+      {rows.map((s) => (
+        <li key={s.id} className="border-b border-line">
+          <Link
+            href={`/solicitudes/${s.id}`}
+            className="group grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-6 gap-y-1 py-4 sm:grid-cols-[4.5rem_minmax(0,1fr)_auto_1.5rem]"
+          >
+            <span className="font-mono text-xs text-ink-3 sm:pt-0.5">{s.id}</span>
+            <span className="col-span-2 min-w-0 sm:col-span-1">
+              <span className="line-clamp-2 block text-[15px] font-medium leading-snug group-hover:underline underline-offset-4 sm:truncate">{s.escenario || s.id}</span>
+              <span className="mt-0.5 block truncate text-sm text-ink-3">
+                {s.paciente || '—'} · {s.hospital || '—'}
+              </span>
+            </span>
+            <span className="col-start-2 row-start-1 justify-self-end sm:col-start-auto sm:row-start-auto">
+              <EstadoBadge estado={s.estado} />
+            </span>
+            <span aria-hidden className="hidden text-ink-3 transition-transform group-hover:translate-x-0.5 sm:block">
+              →
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
   )
 }
