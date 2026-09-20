@@ -1,0 +1,13 @@
+{
+  "catalogoId": "apendicectomia-laparoscopica",
+  "procedimientoTexto": "apendicectomía laparoscópica de urgencia",
+  "diagnostico": "Apendicitis aguda no complicada",
+  "cie10Sugerido": "K35.80",
+  "especialidad": "Cirugía general",
+  "tipoAtencionInferido": "Emergencia",
+  "justificacionClinica": "Dolor en fosa ilíaca derecha con Blumberg positivo, leucocitosis y ecografía con apéndice de 11 mm no compresible.",
+  "documentosMencionados": ["Exámenes de laboratorio", "Imagenología", "Presupuesto hospitalario"],
+  "esEstetico": false,
+  "confianza": 0.96,
+  "ambiguedades": []
+}

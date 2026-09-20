@@ -1,0 +1,13 @@
+{
+  "catalogoId": "colecistectomia-laparoscopica",
+  "procedimientoTexto": "colecistectomía laparoscópica electiva",
+  "diagnostico": "Colelitiasis sintomática",
+  "cie10Sugerido": "K80.20",
+  "especialidad": "Cirugía general",
+  "tipoAtencionInferido": "Electiva",
+  "justificacionClinica": "Episodios recurrentes de cólico biliar con ecografía que describe múltiples litos vesiculares de hasta 14 mm.",
+  "documentosMencionados": ["Exámenes de laboratorio", "Imagenología"],
+  "esEstetico": false,
+  "confianza": 0.94,
+  "ambiguedades": []
+}
